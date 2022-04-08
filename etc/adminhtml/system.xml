@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="accessibly_general" translate="label" sortOrder="10">
+            <label>Accessibly</label>
+        </tab>
+        <section id="otm_accessibly" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>accessibly_general</tab>
+            <resource>Onthemap_Accessibly::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="display_text" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Accessibly Key</label>
+                    <comment>Log in our dashboard to generate the key</comment>
+                </field>
+            </group>
+            <group id="instructions" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Instructions</label>
+                <field id="instruction_field" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Instructions</label>
+                    <frontend_model>Onthemap\Accessibly\Block\Adminhtml\Config\Instructions</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
