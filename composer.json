@@ -8,9 +8,6 @@
             "email": "arturs@onthemap.com"
         }
     ],
-    "require": {
-      "php": "^7.1"
-    },
     "autoload": {
       "files": [
         "registration.php"

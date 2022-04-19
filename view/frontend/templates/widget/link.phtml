@@ -1,0 +1,16 @@
+<script>
+    require.config({
+        map: {
+            '*': {
+                'widgetjs': '<?php echo $this->getScriptUrl(); ?>'
+            }
+        }
+    });
+
+    require([
+        'widgetjs'
+    ], function (widgetjs) {
+
+    });
+
+</script>
