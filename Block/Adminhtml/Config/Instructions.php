@@ -43,11 +43,14 @@ class Instructions extends Field
      */
     public function render(AbstractElement $element)
     {
-        $html = '<ol style="padding-left: 30px; font-size:15px;">';
-        $html .= '<li>Create your account at our dashboard <a target="_blank" href="https://ac.onthemapmarketing.com/register">register here</a></li>';
-        $html .= '<li>Get the API key and copy it here in Magento</li>';
-        $html .= '<li>Copy code snippet generated on dashboard</li>';
-        $html .= '<li>Configure your widget</li>';
+        $html = '<div style="display: flex; align-items: center; justify-content: space-between;">';
+        $html .= '<p>Log in our dashboard to generate the key—Log into Accessibly App Dashboard to generate this key</p>';
+        $html .= '<a style="margin-top:15px; margin-bottom: 15px; display: inline-block;" class="action action-advanced-reports" target="_blank" href="https://staging.ac.onthemapmarketing.com/login"><span style="padding-right: 5px;">Accessibly Dashboard</span></a>';
+        $html .= '</div>';
+        $html .= '<ol style="padding-left: 20px; font-size:15px;">';
+        $html .= '<li>Create your Accessibly account by <a target="_blank" href="https://staging.ac.onthemapmarketing.com/register">registering here</a></li>';
+        $html .= '<li>After the registration, copy the API key and paste it into the field above</li>';
+        $html .= '<li>Configure your widget and customize its settings under your Accessibly App Panel</li>';
         $html .= '</ol>';
 
         return $html;
