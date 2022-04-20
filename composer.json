@@ -1,17 +1,9 @@
 {
-  "name": "onthemap/accessibly",
+  "name": "on_the_map/accessibly",
   "description": "Accessibility widget",
   "type": "magento2-module",
   "version": "1.0.3",
-  "authors": [
-      {
-          "name": "Arturs Juhnevics",
-          "email": "arturs@onthemap.com"
-      }
-  ],
-  "require": {
-    "php": "^7.1"
-  },
+  "license": "AFL-3.0",
   "autoload": {
     "files": [
       "registration.php"
