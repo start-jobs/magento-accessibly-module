@@ -2,37 +2,22 @@
 
 namespace Onthemap\Accessibly\Block\Adminhtml\Config;
 
-use Dotdigitalgroup\Sms\Model\Account;
 use Magento\Backend\Block\Template\Context;
 use Magento\Config\Block\System\Config\Form\Field;
 use Magento\Framework\Data\Form\Element\AbstractElement;
 
 class Instructions extends Field
 {
-    /**
-     * @var Account
-     */
-    private $account;
-
-    /**
-     * Template path
-     *
-     * @var string
-     */
-    // protected $_template = 'Onthemap_Accessibly::account_message.phtml';
 
     /**
      * AccountMessage constructor.
      * @param Context $context
-     * @param Account $account
      * @param array $data
      */
     public function __construct(
         Context $context,
-        Account $account,
         array $data = []
     ) {
-        $this->account = $account;
         parent::__construct($context, $data);
     }
 
