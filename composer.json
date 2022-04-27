@@ -2,7 +2,7 @@
   "name": "on_the_map/accessibly",
   "description": "Accessibility widget",
   "type": "magento2-module",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "license": "AFL-3.0",
   "autoload": {
     "files": [
