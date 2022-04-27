@@ -16,7 +16,7 @@ class Widget extends \Magento\Framework\View\Element\Template
     public function getScriptUrl()
     {
         $id = $this->_scopeConfig->getValue('otm_accessibly/general/api', ScopeInterface::SCOPE_STORE);
-        $url = 'https://staging.ac.onthemapmarketing.com/widget/'. $id .'/autoload.js';
+        $url = 'https://ac.onthemapmarketing.com/widget/'. $id .'/autoload.js';
         if ($id != '') {
             return $url;
         }
