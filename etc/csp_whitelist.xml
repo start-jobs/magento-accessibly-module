@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+          <values>
+            <value id="accessiblyOtm" type="host">https://ac.onthemapmarketing.com</value>
+            <value id="accessiblyOtmWidget" type="host">https://cdn.accessibly.app</value>
+          </values>
+        </policy>
+        <policy id="font-src">
+          <values>
+            <value id="accessiblyOtmWidgetFont" type="host">https://cdn.accessibly.app</value>
+          </values>
+        </policy>
+    </policies>
+</csp_whitelist>

@@ -2,15 +2,16 @@
     require.config({
         map: {
             '*': {
-                'widgetjs': '<?php echo $this->getScriptUrl(); ?>'
+                'mainWidget': "https://cdn.accessibly.app/accessibility-widget-v2.min.js",
+                'widgetjs': '<?php echo $this->getScriptUrl(); ?>',
             }
         }
     });
 
     require([
+        'mainWidget',
         'widgetjs'
-    ], function (widgetjs) {
-
+    ], function (mainWidget, widgetjs) {
+        mainWidget.init(window.AccessiblySettings)
     });
-
 </script>
